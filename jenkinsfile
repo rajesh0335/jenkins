@@ -2,21 +2,11 @@ pipeline {
 	agent any
 	stages {
 		stage ('build') {
+		steps {
 		echo "this is build"
-		}
-		stage ('test: integration-&-quality') {
-		echo "this is test"
-		}
-		stage ('test: functional') {
-		echo "this is build"
-		}
-		stage ('test: load-&-security') {
-		echo "this is build"
-		}
-		stage ('approval') {
-		}
-		stage ('deploy:prod') {
 		}
 	}
+    }
 }
+
 
