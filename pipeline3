@@ -1,0 +1,20 @@
+pipeline {
+	agent any 
+	stages {
+	stage ('parallel') {
+	parallel {
+	stage ('1st) {
+	steps {
+        echo "first job"
+	}
+	stage ('2nd') {
+        steps {
+	echo "second job"
+	}
+	}
+	}
+	}
+	
+	}
+	}
+}
