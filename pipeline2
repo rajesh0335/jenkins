@@ -1,0 +1,15 @@
+pipeline {
+        agent any
+        stages {
+                stage ('build') {
+                input {
+		message "Press ok to run"
+		}
+		steps {
+
+                echo "this is build"
+                }
+         }
+    }
+}
+
