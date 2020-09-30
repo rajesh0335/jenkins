@@ -10,11 +10,10 @@ pipeline {
                 echo "this is build"
 		stage ('test') {
 		}
-		steps {
+		steps 
 		echo "this is test"
-		}		}
+		}
+		
                 }
          }
     }
-
-
